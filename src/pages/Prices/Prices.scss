@@ -1,0 +1,281 @@
+.prices {
+  &__wrap {
+    padding-top: 60px;
+    margin: 0 0 60px 60px;
+  }
+  &__title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 108.5%;
+    letter-spacing: 3.9px;
+    text-transform: uppercase;
+    padding-left: 180px;
+  }
+  &__line {
+    border: 1px solid;
+    margin: 15px 0 30px;
+  }
+  &__box {
+    display: flex;
+    align-items: flex-end;
+  }
+  &__title1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 108.5%;
+    letter-spacing: 5.2px;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 169%;
+    letter-spacing: 1.68px;
+    display: none;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    &-left {
+      position: relative;
+      width: 254px;
+      height: 126px;
+      background-color: #fb1b3d;
+      padding: 17px 28px;
+    }
+    &-right {
+      width: 370px;
+    }
+  }
+  &__title {
+    &-left {
+      width: 100px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 108.5%;
+      letter-spacing: 2.6px;
+      text-transform: uppercase;
+    }
+    &-right {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 108.5%;
+      letter-spacing: 2.6px;
+      text-transform: uppercase;
+    }
+  }
+  &__btn {
+    position: absolute;
+    right: 40px;
+    bottom: 16px;
+    width: 62px;
+    height: 62px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2px;
+    background-color: #fff;
+    border: none;
+    border-radius: 62px;
+    &-text {
+      font-size: 8px;
+      font-weight: 700;
+      line-height: 108.5%;
+      letter-spacing: 1.04px;
+      text-transform: uppercase;
+    }
+  }
+  &__text-right {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 154.5%;
+    letter-spacing: 0.78px;
+    margin: 10px 0;
+  }
+  &__price {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 108.5%;
+    letter-spacing: 3.9px;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .prices {
+    &__box {
+      align-items: center;
+    }
+    &__list {
+      row-gap: 56px;
+    }
+    &__item {
+      flex-direction: column;
+      &-left {
+        width: 363px;
+        height: 181px;
+        padding: 24px 40px;
+      }
+      &-right {
+        text-align: left;
+      }
+    }
+    &__title-left {
+      width: 120px;
+    }
+    &__btn {
+      width: 88px;
+      height: 88px;
+      right: 60px;
+      bottom: 24px;
+      border-radius: 88px;
+      row-gap: 8px;
+      &-text {
+        font-size: 12px;
+      }
+    }
+    &__text-right {
+      font-size: 15px;
+      margin: 20px 0;
+    }
+    &__price {
+      font-size: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .prices {
+    &__wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 30px 30px;
+    }
+    &__title,
+    &__line {
+      display: none;
+    }
+    &__box {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__list {
+      padding-top: 75px;
+    }
+    &__box-txts {
+      display: flex;
+      align-items: center;
+    }
+    &__title1 {
+      padding: 50px 0;
+      margin-left: -70px;
+    }
+    &__text {
+      display: block;
+      width: 257px;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .prices {
+    &__title1 {
+      font-size: 35px;
+    }
+    &__text {
+      font-size: 14px;
+      margin-left: -30px;
+    }
+    &__item {
+      align-items: flex-start;
+      &-left {
+        width: 300px;
+        height: 150px;
+      }
+      &-right {
+        width: 300px;
+        text-align: left;
+      }
+    }
+    &__title-left {
+      width: 120px;
+    }
+    &__btn {
+      width: 75px;
+      height: 75px;
+      right: 50px;
+      bottom: 20px;
+      border-radius: 75px;
+      row-gap: 4px;
+      &-text {
+        font-size: 10px;
+      }
+    }
+    &__text-right {
+      font-size: 14px;
+      margin: 15px 0;
+    }
+    &__price {
+      font-size: 35px;
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .prices {
+    &__title1 {
+      font-size: 30px;
+      padding: 40px 10px;
+    }
+    &__text {
+      width: 200px;
+      font-size: 12px;
+    }
+    &__list {
+      row-gap: 42px;
+    }
+    &__item {
+      &-left {
+        width: 254px;
+        height: 126px;
+        padding: 17px 28px;
+      }
+      &-right {
+        width: 257px;
+      }
+    }
+    &__title-left {
+      width: 100px;
+      font-size: 16px;
+    }
+    &__btn {
+      width: 62px;
+      height: 63px;
+      right: 40px;
+      bottom: 16px;
+      border-radius: 62px;
+      row-gap: 0;
+      &-text {
+        font-size: 10px;
+      }
+    }
+    &__title-right {
+      font-size: 16px;
+    }
+    &__text-right {
+      font-size: 12px;
+    }
+    &__price {
+      font-size: 28px;
+    }
+  }
+}
