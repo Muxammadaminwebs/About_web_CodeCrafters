@@ -25,7 +25,11 @@ const Prices = () => {
                     <h4 className="prices__title-left">Name of the service</h4>
                     <button className="prices__btn">
                       <p className="prices__btn-text">Start project</p>
-                      <img src={arrow} alt="arrow-right" />
+                      <img
+                        className="prices__arrow"
+                        src={arrow}
+                        alt="arrow-right"
+                      />
                     </button>
                   </div>
                   <div className="prices__item-right">
@@ -33,7 +37,8 @@ const Prices = () => {
                     <p className="prices__text-right">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris
                     </p>
                     <strong className="prices__price">100 $</strong>
                   </div>
@@ -43,7 +48,11 @@ const Prices = () => {
                     <h4 className="prices__title-left">Name of the service</h4>
                     <button className="prices__btn">
                       <p className="prices__btn-text">Start project</p>
-                      <img src={arrow} alt="arrow-right" />
+                      <img
+                        className="prices__arrow"
+                        src={arrow}
+                        alt="arrow-right"
+                      />
                     </button>
                   </div>
                   <div className="prices__item-right">
@@ -51,7 +60,8 @@ const Prices = () => {
                     <p className="prices__text-right">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris
                     </p>
                     <strong className="prices__price">100 $</strong>
                   </div>
@@ -61,7 +71,11 @@ const Prices = () => {
                     <h4 className="prices__title-left">Name of the service</h4>
                     <button className="prices__btn">
                       <p className="prices__btn-text">Start project</p>
-                      <img src={arrow} alt="arrow-right" />
+                      <img
+                        className="prices__arrow"
+                        src={arrow}
+                        alt="arrow-right"
+                      />
                     </button>
                   </div>
                   <div className="prices__item-right">
@@ -69,7 +83,8 @@ const Prices = () => {
                     <p className="prices__text-right">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris
                     </p>
                     <strong className="prices__price">100 $</strong>
                   </div>
