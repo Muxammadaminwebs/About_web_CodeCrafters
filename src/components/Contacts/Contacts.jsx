@@ -35,7 +35,7 @@ const Contacts = () => {
 
   return (
     <>
-      <Layout>
+     
         <section className="contact container-fluid">
           <div className="contact__wrap">
             <h2 className="contact__title">Contacts</h2>
@@ -43,7 +43,7 @@ const Contacts = () => {
               <form className="contact__form" onSubmit={handleSubmit}>
                 <h3 className="contact__title2">Contact us</h3>
                 <p className="contact__text">
-                  Let's get to the next level together
+                  Let`s get to the next level together
                 </p>
                 <div className="form-outline form-white">
                   <input
@@ -58,7 +58,8 @@ const Contacts = () => {
                   />
                   <label
                     className="contact__label form-label"
-                    htmlFor="username">
+                    htmlFor="username"
+                  >
                     Full name
                   </label>
                 </div>
@@ -101,16 +102,19 @@ const Contacts = () => {
                     onChange={handleInputChange}
                     rows="4"
                     placeholder="Your message"
-                    required></textarea>
+                    required
+                  ></textarea>
                   <label
                     className="contact__label form-label"
-                    htmlFor="description">
+                    htmlFor="description"
+                  >
                     How can we help?
                   </label>
                 </div>
                 <button
                   className="contact__form-btn btn btn-danger"
-                  type="submit">
+                  type="submit"
+                >
                   Send
                 </button>
               </form>
@@ -120,7 +124,8 @@ const Contacts = () => {
                     <FaPhone className="contact__icon" />
                     <Link
                       className="contact__link-link"
-                      to="tel: +1 (647)-563-9114">
+                      to="tel: +1 (647)-563-9114"
+                    >
                       +1 (647)-563-9114
                     </Link>
                   </div>
@@ -128,7 +133,8 @@ const Contacts = () => {
                     <IoIosMail className="contact__icon-min" />
                     <Link
                       className="contact__link-link"
-                      to="mailto: lead@gmail.com">
+                      to="mailto: lead@gmail.com"
+                    >
                       lead@gmail.com
                     </Link>
                   </div>
@@ -171,7 +177,7 @@ const Contacts = () => {
             </div>
           </div>
         </section>
-      </Layout>
+    
     </>
   );
 };

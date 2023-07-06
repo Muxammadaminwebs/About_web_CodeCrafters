@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Space+Grotesk:wght@300;400;500&display=swap");
+
+@font-face {
+  font-family: Chopsic;
+  src: url(../../assets//font/chopsic-font/Chopsic-K6Dp.ttf); /* Font faylning yo'li */
+}
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Space Grotesk', sans-serif;
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  margin-bottom: 200px;
+  padding: 20px 5px 20px 5px;
+//   backdrop-filter: invert(80%);
+backdrop-filter: blur(10px);
+  z-index: 2;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoHome {
+  font-family: "Chopsic";
+  font-weight: 100;
+  position: relative;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+
+    animation: headerLogoLineAnima 4.5s linear infinite;
+  }
+}
+@keyframes headerLogoLineAnima {
+  0% {
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 0, 0, 0.116);
+    box-shadow: 0px 10px 15px -3px rgba(255, 0, 0, 0.37);
+  }
+  25% {
+    width: 50%;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 0, 0, 0.788);
+    box-shadow: 0px 10px 15px -3px rgba(255, 0, 0, 0.733);
+  }
+  50% {
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0px 10px 15px -3px rgb(255, 0, 0);
+  }
+
+  75% {
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 0, 0, 0.63);
+    box-shadow: 0px 10px 15px -3px rgba(255, 0, 0, 0.733);
+  }
+
+  100% {
+    width: 0%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 0, 0, 0.274);
+    box-shadow: 0px 10px 15px -3px rgba(255, 0, 0, 0.37);
+  }
+}
+
+.headerLinksWrapp{
+    max-width: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerLinkItem{
+    transition: all 0.2s ease;
+    padding: 0 6px 0 6px;
+    &:hover{
+        color: rgb(255, 66, 66);
+        font-weight: 500;
+    }
+}

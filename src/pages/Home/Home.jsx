@@ -10,7 +10,6 @@ const Home = () => {
       <Layout title={"Home page"}>
         <Reviews />
         <Services />
-
         <Contacts />
       </Layout>
     </>
