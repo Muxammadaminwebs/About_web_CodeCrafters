@@ -10,6 +10,8 @@ import {
 } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { HiLocationMarker } from "react-icons/hi";
+import arrowWhite from "../../assets/image/otherImages/arrow-white.svg";
+import arrowBlack from "../../assets/image/otherImages/arrow-black.svg";
 import "./Contacts.scss";
 
 const Contacts = () => {
@@ -143,6 +145,11 @@ const Contacts = () => {
                   <button className="contact__btn">
                     <p className="contact__btn-text">Become a client</p>
                     <span className="contact__btn-text">business@LEAD.com</span>
+                    <img
+                      className="contact__arrow"
+                      src={arrowWhite}
+                      alt="arrow-white"
+                    />
                   </button>
                   <div className="contact__follow-sm">
                     <h4 className="contact__follow">Follow us</h4>
@@ -159,12 +166,22 @@ const Contacts = () => {
                     </div>
                   </div>
                   <button className="contact__btn">
-                    <p className="contact__btn-text">Become a client</p>
+                    <p className="contact__btn-text">Become a partner</p>
                     <span className="contact__btn-text">business@LEAD.com</span>
+                    <img
+                      className="contact__arrow"
+                      src={arrowBlack}
+                      alt="arrow-black"
+                    />
                   </button>
                   <button className="contact__btn">
-                    <p className="contact__btn-text">Become a client</p>
+                    <p className="contact__btn-text">Join LEAD team</p>
                     <span className="contact__btn-text">business@LEAD.com</span>
+                    <img
+                      className="contact__arrow"
+                      src={arrowWhite}
+                      alt="arrow-white"
+                    />
                   </button>
                 </div>
               </div>
