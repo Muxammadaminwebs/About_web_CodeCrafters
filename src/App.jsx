@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Router from "./router";
-import "./App.css";
 import context from "./context/context";
+import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);

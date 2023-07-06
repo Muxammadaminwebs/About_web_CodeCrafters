@@ -2,11 +2,11 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import Header from "./Header";
 import Footer from "./Footer";
-const Layout = ({children, title}) => {
+const Layout = ({ children, title }) => {
   return (
     <>
       <Helmet>
-      <meta charSet="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="description" content="React app" />
         <title>{title}</title>
       </Helmet>
@@ -22,7 +22,6 @@ const Layout = ({children, title}) => {
         /> */}
       </main>
       <Footer />
-
     </>
   );
 };
